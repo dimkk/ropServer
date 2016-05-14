@@ -16,10 +16,15 @@ fs.readFile(path.resolve('./data/j-hq6VGUIso.xml'), 'utf8', function (err,data) 
   if (err) {
     return console.log(err);
   };
-
+  
   parseString(data, (err, result:ROP.IXmlTranslation)=>{
-    renderData.title = JSON.stringify(result)
-    
+    let video = {
+    code:'j-hq6VGUIso',
+    title:'Разведопрос: Борис Юлин о фашизме',
+    preview:'http://img.youtube.com/vi/j-hq6VGUIso/0.jpg',
+    translation:result
+  } as ROP.IYouTubeVideo;
+    renderData.title = JSON.stringify(video);
   });
 });
 
