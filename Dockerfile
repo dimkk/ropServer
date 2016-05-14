@@ -7,7 +7,7 @@ ADD tsd.json tsd.json
 RUN npm install
 RUN tsd install
 
-ADD . .
+#ADD . .
 RUN gulp ts
 
 EXPOSE 3000 
