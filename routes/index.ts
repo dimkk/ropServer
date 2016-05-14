@@ -20,7 +20,7 @@ fs.readFile(path.resolve('./data/j-hq6VGUIso.xml'), 'utf8', function (err,data) 
   parseString(data, (err, result:ROP.IXmlTranslation)=>{
     let video = {
     code:'j-hq6VGUIso',
-    title:'Разведопрос: Борис Юлин о фашизме',
+    title:'Разведопрос: Борис Юлин о фашизме1',
     preview:'http://img.youtube.com/vi/j-hq6VGUIso/0.jpg',
     translation:result
   } as ROP.IYouTubeVideo;
